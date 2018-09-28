@@ -24,7 +24,7 @@ class HelpMessageExtension extends AbstractTypeExtension
         $view->vars['help'] = $form->getConfig()->getAttribute('help');
     }
 
-    public function setDefaultOptions(OptionsResolverInterface $resolver)
+    public function configureOptions(\Symfony\Component\OptionsResolver\OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
             'help' => null,

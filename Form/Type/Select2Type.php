@@ -57,7 +57,7 @@ class Select2Type extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function setDefaultOptions(OptionsResolverInterface $resolver)
+    public function configureOptions(\Symfony\Component\OptionsResolver\OptionsResolver $resolver)
     {
         $defaults = array(
             'placeholder'        => 'Select a value',

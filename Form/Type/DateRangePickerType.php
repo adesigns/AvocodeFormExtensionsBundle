@@ -153,7 +153,7 @@ class DateRangePickerType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function setDefaultOptions(OptionsResolverInterface $resolver)
+    public function configureOptions(\Symfony\Component\OptionsResolver\OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
             'drp_translation_domain'  => 'AvocodeFormExtensions',
