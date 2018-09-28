@@ -22,7 +22,7 @@ class DoubleListType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function configureOptions(OptionsResolverInterface $resolver)
+    public function configureOptions(\Symfony\Component\OptionsResolver\OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
             'multiple'    => true,
